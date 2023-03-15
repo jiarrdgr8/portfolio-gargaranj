@@ -3,6 +3,10 @@ import Header from "./components/Header";
 import Aboutme from "./components/Aboutme";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
+import Myskills from "./components/Myskills";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+
 
 function App() {
   
@@ -16,7 +20,9 @@ function App() {
         <Hero />
         <Aboutme />
         <Projects />
-        
+        <Myskills />
+        <Contact />
+        <Footer />
       </main>
     </div>
   );

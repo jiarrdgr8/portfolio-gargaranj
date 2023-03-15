@@ -13,3 +13,17 @@
 .hide-down-arrow{
     display: none;
 }
+
+@media (min-width: 360px) {
+    .custom-height {
+        height: 300px;
+    }
+    .custom-width {
+        width: 300px;
+    }
+}
+
+.tab-group > .active {
+    border-bottom: 100px;
+    border-color: aqua;
+}
