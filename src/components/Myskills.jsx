@@ -30,34 +30,40 @@ const Myskills = () => {
 
   return (
     <section className="min-h-fit flex max-w-7xl mx-auto flex-col justify-center items-center py-16 px-5 text-center">
-      <h3 className="pt-3 pb-6 text-3xl lg:text-4xl border-b-2 w-60">
+      <h3 className="pt-3 pb-6 text-3xl lg:text-4xl border-b-2 w-60 ">
         My Skills
       </h3>
       {/* <p className="max-w-xl font-light text-gray-500  text-sm pt-6 md:text-base justify-evenly">
         These are the skills that I currently possess. More are on the way!
       </p> */}
       <ul className="w-2/5 min-w-[300px] font-light text-gray-500 mb-5 text-sm pt-6 md:text-base flex justify-between align-center items-center tab-group">
-        <li onClick={() => setSkillset("all")} className="cursor-pointer">
+        <li
+          onClick={() => setSkillset("all")}
+          className="cursor-pointer duration-500 active"
+        >
           All
         </li>
-        <li onClick={() => setSkillset("frontend")} className="cursor-pointer">
+        <li
+          onClick={() => setSkillset("frontend")}
+          className="cursor-pointer duration-500"
+        >
           Frontend
         </li>
         <li onClick={() => setSkillset("backend")} className="cursor-pointer">
           Backend
         </li>
         <li onClick={() => setSkillset("other")} className="cursor-pointer">
-          Others
+          Other
         </li>
       </ul>
-      <div className="flex flex-wrap justify-center items-center pt-3">
+      <div className="flex flex-wrap justify-center items-center pt-3 transform:none">
         {newSkillSet.map((skill) => {
           return (
             <div
               key={skill.id}
-              className="w-48 h-48 rounded flex flex-col justify-between items-center  my-3 mx-2 rounded-3xl dark:bg-gray-900 shadow-lg dark:shadow-gray-100"
+              className="w-48 h-48 rounded flex flex-col justify-between items-center  my-3 mx-2 rounded-3xl dark:bg-gray-900 shadow-lg dark:shadow-gray-100 transform translate-x-0 transition duration-500 "
             >
-              <div className="flex-1 flex flex-col justify-center">
+              <div className="flex-1 flex flex-col justify-center ">
                 <img src={skill.image} alt="logo" className="w-28 " />
               </div>
               <div>

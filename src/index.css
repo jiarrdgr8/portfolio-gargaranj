@@ -23,7 +23,18 @@
     }
 }
 
-.tab-group > .active {
-    border-bottom: 100px;
-    border-color: aqua;
+.tab-group>.active {
+    border-bottom: 2px;
+    border-color: aqua !important;
 }
+
+/* .custom-transition {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale(1, 1);
+    transform-origin: 50% 50% 0px
+} */
+
+/* .active {
+    border-bottom: 5px;
+    border-color: aqua;
+} */

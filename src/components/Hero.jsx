@@ -29,9 +29,9 @@ const Hero = () => {
   ];
 
   return (
-    <section className="flex flex-col justify-center align-middle mb-10">
-      <div className="flex justify-center align-middle items-center mx-auto">
-        <div className="min-h-screen flex flex-col justify-center items-center p-5 text-center text-justify">
+    <section className="min-h-screen flex flex-col justify-center align-middle pt-5">
+      <div className="flex flex-wrap lg:flex-nowrap justify-center align-middle items-center mx-auto">
+        <div className="flex flex-col justify-center items-center p-5 text-center text-justify">
           <h2 className="text-3xl lg:text-4xl text-rose-600 uppercase font-bold">
             Jay-ar Gargaran
           </h2>
@@ -62,22 +62,27 @@ const Hero = () => {
             })}
           </div>
         </div>
-        <div className="flex flex-col justify-center align-middle">
-          <img
-            src={mypic}
-            alt="3d avatar"
-            className="w-60 h-60 md:w-72 md:h-72 bg-gradient-to-b from-rose-600 rounded-xl"
-          />
-          <a
-            href="/Resume.pdf"
-            download={true}
-            className="flex items-center justify-center mt-10 bg-gradient-to-r from-rose-600 to-teal-500 text-white py-2 px-9 rounded-lg hover:scale-105 duration-200"
-          >
-            Resume
-          </a>
+        <div className="flex flex-col justify-start align-middle item-center">
+          <div className="w-60 h-60 md:w-72 md:h-72 mx-auto my-auto">
+            <img
+              src={mypic}
+              alt="3d avatar"
+              className=" item-center rounded-xl"
+            />
+          </div>
+          <div className="flex justify-center align-middle items-center">
+            <a
+              href="/resume-gargaran.pdf"
+              download={true}
+              className="flex items-center justify-center bg-gradient-to-r from-rose-600 to-teal-500 text-white py-2 px-9 rounded-lg hover:scale-105 duration-200"
+            >
+              Download CV
+            </a>
+          </div>
         </div>
       </div>
-      <div className="mt-10 down-arrow">
+      <div className="mt-10 down-arrow flex justify-center">
+        {/* <h2>HALOOO</h2> */}
         <FaArrowDown className="text-gray-400 text-2xl animate-bounce" />
       </div>
     </section>
