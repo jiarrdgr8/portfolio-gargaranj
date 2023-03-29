@@ -10,8 +10,8 @@ export const projects = [
         image: p1,
         title: "Facebuko",
         description: 'Lorem adasdasdasdasd',
-        demo: 'https://facebook.com',
-        github: 'https://github.com/'
+        demo: 'https://facebuko.vercel.app/',
+        github: 'https://github.com/jiarrdgr8/fullstack-SocMed/'
     },
     {
         image: p2,
