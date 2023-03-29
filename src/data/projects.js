@@ -9,7 +9,7 @@ export const projects = [
     {
         image: p1,
         title: "Facebuko",
-        description: 'Lorem adasdasdasdasd',
+        description: 'A mini social media that is made for fun. It was built using MERN.',
         demo: 'https://facebuko.vercel.app/',
         github: 'https://github.com/jiarrdgr8/fullstack-SocMed/'
     },
@@ -22,10 +22,10 @@ export const projects = [
     },
     {
         image: p3,
-        title: "Jiarrflix",
-        demo: 'https://facebook.com',
+        title: "Portolio Website",
         description: 'Ldseisdjifggdasd',
-        github: 'https://github.com/'
+        demo: 'https://gargaran.netlify.app/',
+        github: 'https://github.com/jiarrdgr8/portfolio-gargaranj'
     },
     {
         image: p4,
