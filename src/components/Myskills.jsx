@@ -123,7 +123,7 @@ const Myskills = () => {
               className="w-32 h-32 md:w-48 md:h-48 rounded flex flex-col justify-between items-center  my-3 mx-2 rounded-3xl dark:bg-gray-900 shadow-lg dark:shadow-gray-100 transform translate-x-0 transition duration-500 "
             >
               <div className="flex-1 flex flex-col justify-center ">
-                <img src={skill.image} alt="logo" className="w-20 md:w-28 " />
+                <img src={skill.image} alt="logo" className="w-16 md:w-28 " />
               </div>
               <div>
                 <h3 className="pb-2">{skill.name}</h3>
