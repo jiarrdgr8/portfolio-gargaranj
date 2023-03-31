@@ -15,31 +15,31 @@ export const projects = [
     },
     {
         image: p2,
-        title: "Esports and Chill",
-        description: 'Loas 1231321 sdasd',
+        title: "Ecommerce Website",
+        description: 'asdasdasdsadsad',
         demo: 'https://facebook.com',
         github: 'https://github.com/'
     },
     {
         image: p3,
-        title: "Portolio Website",
+        title: "AI Image Generator",
         description: 'Ldseisdjifggdasd',
-        demo: 'https://gargaran.netlify.app/',
-        github: 'https://github.com/jiarrdgr8/portfolio-gargaranj'
+        demo: 'https://ai-image-generator-fsw2.onrender.com',
+        github: 'https://github.com/jiarrdgr8/ai-image-generator'
     },
     {
         image: p4,
-        title: "ECommerce Landing Page",
+        title: "Portolio Website",
         description: 'aAorem1236456546545',
-        demo: 'https://facebook.com',
-        github: 'https://github.com/'
+        demo: 'https://gargaran.netlify.app/',
+        github: 'https://github.com/jiarrdgr8/portfolio-gargaranj'
     },
     {
         image: p5,
         title: "Contact Management App",
         description: 'GDFE adasww sa ahgfh fg ',
-        demo: 'https://facebook.com',
-        github: 'https://github.com/'
+        demo: 'https://github.com/jiarrdgr8/contact-management-app',
+        github: 'https://github.com/jiarrdgr8/contact-management-app'
     }
   ]
 
