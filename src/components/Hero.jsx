@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTwitter, FaFacebook, FaLinkedin, FaArrowDown } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaArrowDown, FaGithub } from "react-icons/fa";
 import mypic from "../assets/mypic.jpg";
 
 const Hero = () => {
@@ -13,17 +13,17 @@ const Hero = () => {
   const social = [
     {
       id: 1,
-      link: "https://twitter.com",
-      icon: <FaTwitter />,
+      link: "https://github.com/jiarrdgr8",
+      icon: <FaGithub />,
     },
     {
       id: 2,
-      link: "https://facebook.com",
+      link: "https://www.facebook.com/eaglemna89",
       icon: <FaFacebook />,
     },
     {
       id: 3,
-      link: "https://linkedin.com",
+      link: "https://www.linkedin.com/in/jay-ar-gargaran-519a79138/",
       icon: <FaLinkedin />,
     },
   ];
