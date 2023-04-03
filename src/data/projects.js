@@ -1,15 +1,15 @@
-import p1 from '../assets/p1.jpg'
-import p2 from '../assets/p2.jpg'
-import p3 from '../assets/p3.jpg'
-import p4 from '../assets/p4.jpg'
-import p5 from '../assets/p5.jpg'
+import p1 from '../assets/p1.png'
+import p2 from '../assets/p2.png'
+import p3 from '../assets/p3.png'
+import p4 from '../assets/p4.png'
+import p5 from '../assets/p5.png'
 
 
 export const projects = [
     {
         image: p1,
         title: "Facebuko",
-        description: 'A mini social media platform that serves as a parody of Facebook. Anyone can register, make friends, post content, and engage with others on the platform. The design is responsive and the project is built using modern web development technologies, with a frontend developed using React, Redux Toolkit, and Material UI. The backend was developed using Node JS and Express JS and the database is powered by MongoDB. \n \n \n The project uses JSON Web Tokens (JWT) for authentication and authorization, and also employs security measures like Helmet and CORS.',
+        description: 'A mini social media platform that serves as a parody of Facebook. Anyone can register, make friends, post content, and engage with others on the platform. The design is responsive and the project is built using modern web development technologies, with a frontend developed using React, Redux Toolkit, and Material UI. The backend was developed using Node JS and Express JS and the database is powered by MongoDB. The project uses JSON Web Tokens (JWT) for authentication and authorization, and also employs security measures like Helmet and CORS.',
         demo: 'https://facebuko.vercel.app/',
         github: 'https://github.com/jiarrdgr8/fullstack-SocMed/'
     },
@@ -30,7 +30,7 @@ export const projects = [
     {
         image: p4,
         title: "Portolio Website",
-        description: ' a responsive showcase of my skills and projects. Built using ReactJS and Tailwind CSS, it features a brief introduction and overview of my skills, experience, and projects. The website includes a functional contact me component and a downloadable CV for visitors to easily access. ',
+        description: ' a responsive showcase of my skills and projects. Built using ReactJS and Tailwind CSS, it features a brief introduction and overview of my skills, experience, and projects. The website includes a functional contact me component and a downloadable CV for visitors to easily access and a light/dark mode toggle.',
         demo: 'https://gargaran.netlify.app/',
         github: 'https://github.com/jiarrdgr8/portfolio-gargaranj'
     },

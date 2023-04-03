@@ -46,23 +46,29 @@ const Projects = () => {
             <h1 className="duration-500 text-lg md:text-3xl">
               {projects[currentIndex].title}
             </h1>
-            <p className="duration-500">{projects[currentIndex].description}</p>
+            <p className="duration-500 text-xs mx-3 sm:text-sm md:text-lg md:pt-2 lg:text-2xl">
+              {projects[currentIndex].description}
+            </p>
           </div>
-          <div className="flex justify-center py-2 md:py-6 text-3xl w-full ">
+          <div className="flex justify-center py-2 md:py-6 text-1xl sm:text-lg md:text-2xl sm:text-3xl w-full align-middle">
             <a
               href={projects[currentIndex].demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-10 py-2 md:py-5"
+              className="px-10 py-2 md:py-5 flex justify-center align-middle my-auto"
             >
-              <FaExternalLinkAlt />
+              <h2 className="mr-2">Demo </h2>
+              <h2>
+                <FaExternalLinkAlt />
+              </h2>
             </a>
             <a
               href={projects[currentIndex].github}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-10 py-2 md:py-5 "
+              className="px-10 py-2 md:py-5 flex justify-center align-middle "
             >
+              <h2 className="mr-2">Github </h2>
               <FaGithub />
             </a>
           </div>
