@@ -6,24 +6,24 @@ const Myskills = () => {
   const [skillset, setSkillset] = useState("all");
   let newSkillSet;
 
-  // const set = [
-  //   {
-  //     id: 1,
-  //     title: "All",
-  //   },
-  //   {
-  //     id: 1,
-  //     title: "Frontend",
-  //   },
-  //   {
-  //     id: 1,
-  //     title: "Backend",
-  //   },
-  //   {
-  //     id: 1,
-  //     title: "Other",
-  //   },
-  // ];
+  const set = [
+    {
+      id: 1,
+      title: "All",
+    },
+    {
+      id: 1,
+      title: "Frontend",
+    },
+    {
+      id: 1,
+      title: "Backend",
+    },
+    {
+      id: 1,
+      title: "Other",
+    },
+  ];
 
   switch (skillset) {
     case "all":
@@ -47,20 +47,11 @@ const Myskills = () => {
     default:
   }
 
-  // const handleClick = (e) => {
-  //   setSkillset(e.target.id);
-  //   tabs.addEventListener("click", function (e) {
-  //     const id = e.target.dataset.id;
-  //     console.log(e);
-  //     if (id) {
-  //       // remove selected from other buttons
-  //       tabs.forEach(function (item) {
-  //         item.classList.remove("border-green-400");
-  //       });
-  //     }
-  //     e.target.classList.add("border-green-400");
-  //   });
-  // };
+  const handleClick = (e) => {
+    setSkillset(e.target.textContent.toLowerCase());
+    document.querySelector(".active-tab").classList.remove("active-tab");
+    e.target.classList.add("active-tab");
+  };
 
   return (
     <section className="min-h-fit flex max-w-7xl mx-auto flex-col justify-center items-center py-16 px-5 text-center">
@@ -71,49 +62,18 @@ const Myskills = () => {
         These are the skills that I currently possess. More are on the way!
       </p> */}
       <ul className="w-2/5 min-w-[300px] font-light text-gray-500 mb-5 text-sm pt-6 md:text-base flex justify-between align-center items-center tab-group">
-        {/* {set.map((e, i) => (
+        {set.map((e, i) => (
           <li
             key={i}
-            id={set.id}
-            enabled={skillset === `${set.id}`}
             onClick={handleClick}
-            className="cursor-pointer"
+            className={`cursor-pointer tab-item ${
+              i === 0 ? "active-tab" : ""
+            } duration-300`}
           >
             {e.title}
           </li>
-        ))} */}
-
-        <li onClick={() => setSkillset("all")} className="cursor-pointer tab">
-          All
-        </li>
-        <li
-          onClick={() => setSkillset("frontend")}
-          className="cursor-pointer tab"
-        >
-          Frontend
-        </li>
-        <li
-          onClick={() => setSkillset("backend")}
-          className="cursor-pointer tab"
-        >
-          Backend
-        </li>
-        <li onClick={() => setSkillset("other")} className="cursor-pointer tab">
-          Other
-        </li>
+        ))}
       </ul>
-
-      {/* {tabs.addEventListener("click", function (e) {
-        const id = e.target.dataset.id;
-        console.log(e);
-        if (id) {
-          // remove selected from other buttons
-          tabs.forEach(function (item) {
-            item.classList.remove("border-green-400");
-          });
-        }
-        e.target.classList.add("border-green-400");
-      })} */}
 
       <div className="flex flex-wrap justify-center items-center pt-3 transform:none duration-500">
         {newSkillSet.map((skill) => {

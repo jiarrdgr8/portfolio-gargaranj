@@ -29,7 +29,7 @@ export const projects = [
     },
     {
         image: p4,
-        title: "Portolio Website",
+        title: "Portfolio Website",
         description: '- a responsive showcase of my skills and projects. Built using ReactJS and Tailwind CSS, it features a brief introduction and overview of my skills, experience, and projects. The website includes a functional contact me component and a downloadable CV for visitors to easily access and a light/dark mode toggle.',
         demo: 'https://gargaran.netlify.app/',
         github: 'https://github.com/jiarrdgr8/portfolio-gargaranj'

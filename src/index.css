@@ -14,6 +14,14 @@
     display: none;
 }
 
+.active-tab {
+    border-bottom-width: 2px;
+    border-bottom-color: #68d391;
+
+}
+
+
+
 @media (min-width: 360px) {
     .custom-height {
         height: 300px;
